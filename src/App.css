@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+.update.hidden {
+  display: none;
+}
+
+.todo {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid green;
+  padding: 20px;
+}
+
+.todo input {
+  background: #f7f7f7;
+  border: gray;
+  width: 80%;
+  height: 44px;
+}
+
+.todo .addTodo {
+  background: rebeccapurple;
+  border: gray;
+  width: 15%;
+  height: 44px;
+  color: aquamarine;
+}
+
+.todo ul li {
+  list-style: none;
+  text-align: left;
+  border-bottom: 1px solid gray;
+  padding: 6px 0;
+}
+
+.todo ul li .removeTodo {
+  float: right;
+  background: grey;
+  color: black;
+  border: 0;
+  margin-right: 20px;
+}
+
+.update {
+  display: block;
+  width: 100%;
+  background: gray;
+  height: 44px;
+
+}
+
+.update.enabled {
+  display: block;
+  width: 100%;
+  background: blueviolet;
+  color: #f7f7f7;
+  height: 44px;
+
+}
