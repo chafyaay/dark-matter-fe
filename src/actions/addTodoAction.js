@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const addtodoAction = (todo, id, token, kpi) => {
     return (dispach) => {
-        return axios.post("http://localhost:7777/todoApp/api/todo", {
+        return axios.post("http://localhost:81/todoApp/api/todo", {
             id: id,
             todo: todo
         }, {
@@ -22,7 +22,7 @@ export const addtodoAction = (todo, id, token, kpi) => {
 
 export const getTodoListAction = () => {
     return (dispach) => {
-        return axios.get("http://localhost:7777/todoApp/api/todos").then(res => {
+        return axios.get("http://localhost:81/todoApp/api/todos").then(res => {
             dispach({
                 type: "GET TODO LIST",
                 todoList: res.data
@@ -34,7 +34,7 @@ export const getTodoListAction = () => {
 
 export const removeTodoListAction = (todoId, token, kpi) => {
     return (dispach) => {
-        return axios.delete(`http://localhost:7777/todoApp/api/todo/${todoId}`, {
+        return axios.delete(`http://localhost:81/todoApp/api/todo/${todoId}`, {
             headers: {
                 Authorization: token,
                 kpi: kpi
@@ -56,7 +56,7 @@ export const removeTodoListAction = (todoId, token, kpi) => {
 
 export const updateTodoAction = (todoId, todo, token, kpi) => {
     return (dispach) => {
-        return axios.patch(`http://localhost:7777/todoApp/api/todo/${todoId}`, {
+        return axios.patch(`http://localhost:81/todoApp/api/todo/${todoId}`, {
             id: todoId,
             todo: todo
         }, {

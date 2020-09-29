@@ -14,7 +14,7 @@ export default class App extends Component {
 
   getToken = async () => {
     try {
-      let res = await axios.get('http://localhost:7777');
+      let res = await axios.get('http://localhost:81');
       // let header = res.data;
 
       this.setState(
